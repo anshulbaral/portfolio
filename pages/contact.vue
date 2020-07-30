@@ -5,7 +5,7 @@
       <div
         class="flex justify-center flex-wrap font-medium italic text-white bg-purple-400 rounded-sm"
       >
-        <div class="bg-indigo-700 p-2 rounded-full">A place where our talents meet.</div>
+        <div class="bg-indigo-700 p-2 rounded-full">Contact me</div>
       </div>
       <div class="flex">
         <Navbar />
