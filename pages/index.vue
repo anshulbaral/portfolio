@@ -2,17 +2,29 @@
   <div>
     <div class="h-full">
       <Header />
+
+      <button @click="x = !x">
+        <MenuIcon />
+      </button>
+      <button class="btn btn-red py-4 ">
+        Big button
+      </button>
+
       <div
         class="flex justify-center flex-wrap font-medium italic text-white bg-purple-400 rounded-sm"
       >
-        <div class="bg-indigo-700 p-2 rounded-full">A place where our talents meet.</div>
+        <div class="bg-indigo-700 p-2 rounded-full">
+          A place where our talents meet.
+        </div>
       </div>
       <div class="flex">
-        <Navbar class="w-1/4" />
+        <Navbar v-if="x == true" class="w-1/4" />
 
-        <div class="w-3/4 pl-3 pt-2 bg-gray-300">
+        <div class="w-full pl-3 pt-2 bg-gray-300">
           <div class="mb-6">
-            <div class="rounded-lg shadow-lg flex flex-wrap w-64 bg-white text-purple-600">
+            <div
+              class="rounded-lg shadow-lg flex flex-wrap w-64 bg-white text-purple-600"
+            >
               <h1 class="text-3xl font-semibold ml-2">Portfolio</h1>
             </div>
             <div class="w-3/4 text-lg rounded-md font-semibold text-gray-900">
@@ -20,42 +32,30 @@
             </div>
           </div>
           <div class="flex flex-wrap items-start">
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202423.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202619.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202341.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202359.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202347.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202536.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202608.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202528.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="/img/IMG_20200729_202450.jpg" alt />
+            <div
+              v-for="i in images"
+              class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2"
+            >
+              <img class="rounded-lg" :src="i.img" alt />
+              <button
+                @click="i.show = !i.show"
+                class=" rounded-lg px-2 focus:outline-none hover:shadow-xl hover:bg-gray-500 hover:-translate-y-1 hover:"
+              >
+                <MoreHorizontalIcon />
+              </button>
+              <div v-if="i.show == true">{{ i.description }}</div>
             </div>
           </div>
           <div class="flex flex-wrap text-center">More coming soon...</div>
           <div class="flex flex-wrap">
             <h1
               class="text-3xl font-semibold mt-4 rounded-lg px-2 shadow-lg w-64 bg-white text-purple-600"
-            >Curious mind</h1>
+            >
+              Curious mind
+            </h1>
             <br />
-            <h2 class="text-lg font-bold flex flex-wrap -mt-6 text-gray-900"
-            >Invite your curious mind to the world of whys
+            <h2 class="text-lg font-bold flex flex-wrap -mt-6 text-gray-900">
+              Invite your curious mind to the world of whys
             </h2>
           </div>
         </div>
@@ -65,8 +65,63 @@
 </template>
 
 <script>
-export default {};
+import { MenuIcon, MoreHorizontalIcon } from "vue-feather-icons";
+
+export default {
+  components: { MenuIcon, MoreHorizontalIcon },
+  data() {
+    return {
+      x: true,
+      images: [
+        {
+          img: "/img/IMG_20200729_202423.jpg",
+          description: "1st image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202619.jpg",
+          description: "2nd image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202341.jpg",
+          description: "3rd image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202359.jpg",
+          description: "4th image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202347.jpg",
+          description: "5th image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202536.jpg",
+          description: "6th image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202608.jpg",
+          description: "7th image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202528.jpg",
+          description: "8th image details",
+          show: false
+        },
+        {
+          img: "/img/IMG_20200729_202450.jpg",
+          description: "9th image details",
+          show: false
+        }
+      ]
+    };
+  }
+};
 </script>
 
-<style>
-</style>
+<style></style>

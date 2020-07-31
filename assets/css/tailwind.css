@@ -1,3 +1,53 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.btn-blue {
+  box-shadow: 1px 1px 3px 0 rgba(8, 116, 249, 0.4);
+  @apply px-12 font-bold text-white uppercase transition duration-500 ease-in-out transform bg-blue-600 rounded-full;
+}
+.btn-blue:hover {
+  @apply -translate-y-1 bg-blue-500;
+}
+.btn-red {
+  box-shadow: 0 0 4px 0 red;
+  @apply px-12 font-bold text-white uppercase transition duration-500 ease-in-out transform bg-red-600 rounded-full;
+}
+.btn-red:hover {
+  @apply -translate-y-1 bg-red-500;
+}
+.btn-gray {
+  box-shadow: 0 0 4px 0 rgb(185, 185, 185);
+  @apply px-12 font-bold uppercase transition duration-500 ease-in-out transform bg-gray-100 rounded-full;
+}
+.btn-gray:hover {
+  background-color: #131921; /* #f3a847;*/
+  @apply text-white -translate-y-1;
+}
+.btn-myntra {
+  box-shadow: 0 0 4px 0 rgb(235, 233, 233);
+  @apply px-12 font-bold uppercase transition duration-500 ease-in-out transform bg-gray-100 rounded-full;
+}
+.btn-myntra:hover {
+  @apply text-white -translate-y-1 bg-pink-500;
+}
+.btn-yellow {
+  box-shadow: 1px 1px 3px 0 rgb(253, 199, 0);
+  background-color: rgb(253, 199, 0);
+  @apply px-12 font-bold text-black uppercase transition duration-500 ease-in-out transform rounded-full;
+}
+.btn-yellow:hover {
+  @apply -translate-y-1;
+}
+.btn {
+  display: block;
+  background-image: url(/right-shadow.svg), url(/right-chevron.svg);
+  background-position: 107% 100%, 90% 50%;
+  background-size: auto 140%, 6px 740px;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
+}
+
+.btn:focus {
+  outline: none;
+}

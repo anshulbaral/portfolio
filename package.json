@@ -14,7 +14,8 @@
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^2.1.0"
+    "@nuxtjs/tailwindcss": "^2.1.0",
+    "vue-feather-icons": "^5.0.0"
   },
   "description": "## Build Setup",
   "main": "nuxt.config.js",
