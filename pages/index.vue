@@ -45,13 +45,13 @@
             </div>
           </div>
           <div class="flex flex-wrap text-center">More coming soon...</div>
-          <div class="flex flex-wrap">
+          <div>
             <div
               class="flex flex-wrap text-3xl font-semibold mt-4 rounded-lg px-2 shadow-lg w-64 bg-white text-purple-600"
             >Curious mind</div>
 
             <div
-              class="text-lg font-bold flex flex-wrap text-gray-900"
+              class="text-md font-normal flex flex-wrap text-gray-800"
             >Invite your curious mind to the world of whys</div>
           </div>
         </div>

@@ -25,6 +25,9 @@
             <img class="h-6 mr-2 mt-1 mb-1" src="img/nav-icon.png" />
             <nuxt-link to="/contact" class="hover:bg-blue-800">Contact me</nuxt-link>
           </div>
+          <div class="flex items-center mb-2 hover:bg-blue-800">
+            <div class="flex items-start">How I started my work.</div>
+          </div>
         </div>
       </div>
     </div>
