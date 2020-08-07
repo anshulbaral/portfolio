@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="flex">
-        <Navbar v-if="x == true" class="w-1/4" />
+        <Navbar v-if="x == true" class="w-1/4 sm:w-2/5" />
 
         <div class="w-full pl-3 pt-2 bg-gray-200">
           <div class="-ml-2">
@@ -18,7 +18,8 @@
               class="bg-teal-100 hover:bg-white text-blue-900 sh focus:outline-none hover:text-gray-800 rounded-full shadow-xl"
               @click="x=!x"
             >
-              <ChevronRightIcon />
+              <ChevronLeftIcon v-if="x == true" />
+              <ChevronRightIcon v-else="x=!x" />
             </button>
           </div>
           <div class="mb-6">
@@ -65,10 +66,16 @@ import {
   MenuIcon,
   MoreHorizontalIcon,
   ChevronRightIcon,
+  ChevronLeftIcon,
 } from "vue-feather-icons";
 
 export default {
-  components: { MenuIcon, MoreHorizontalIcon, ChevronRightIcon },
+  components: {
+    MenuIcon,
+    MoreHorizontalIcon,
+    ChevronRightIcon,
+    ChevronLeftIcon,
+  },
   data() {
     return {
       x: true,
