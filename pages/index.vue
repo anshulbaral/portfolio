@@ -10,12 +10,12 @@
         </div>
       </div>
       <div class="flex">
-        <Navbar v-if="x == true" class="w-1/4 sm:w-2/5" />
+        <Navbar v-if="x == true" class="sm:w-1/4 w-2/5" />
 
         <div class="w-full pl-3 pt-2 bg-gray-200">
           <div class="-ml-2">
             <button
-              class="bg-teal-100 hover:bg-white text-blue-900 sh focus:outline-none hover:text-gray-800 rounded-full shadow-xl"
+              class="bg-teal-100 hover:bg-white text-blue-900 sh focus:outline-none hover:text-gray-800 rounded-full hover:shadow-lg"
               @click="x=!x"
             >
               <ChevronLeftIcon v-if="x == true" />
@@ -38,7 +38,7 @@
               <img class="rounded-lg" :src="i.img" alt />
               <button
                 @click="i.show = !i.show"
-                class="rounded-lg px-2 focus:outline-none hover:shadow-xl hover:bg-gray-400 hover:-translate-y-1 hover:"
+                class="rounded-lg px-2 py-1 focus:outline-none hover:bg-white hover:shadow-lg"
               >
                 <MoreHorizontalIcon />
               </button>
