@@ -2,70 +2,107 @@
   <div>
     <div class="h-full">
       <Header />
-      <div
-        class="flex justify-center flex-wrap font-medium italic text-white bg-purple-400 rounded-sm"
-      >
-        <div class="bg-indigo-700 p-2 rounded-full">A place where our talents meet.</div>
-      </div>
-      <div class="flex">
-        <Navbar />
 
-        <div class="w-full pl-3 pt-2 bg-gray-300">
-          <div class="mb-6">
-            <div class="rounded-lg shadow-lg flex flex-wrap w-64 bg-white text-purple-600">
-              <h1 class="text-3xl font-semibold ml-2">Portfolio</h1>
-            </div>
-            <div class="w-3/4 text-lg rounded-md font-semibold text-gray-900">
-              <h2 class="ml-2">My best art works.</h2>
-            </div>
-          </div>
-          <div class="flex flex-wrap items-start">
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202423.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202619.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202341.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202359.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202347.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202536.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202608.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202528.jpg" alt />
-            </div>
-            <div class="rounded-lg w-48 h-44 shadow-lg bg-white mr-2 mb-2 text-center p-2">
-              <img class="bg-blue-800 rounded-lg" src="img/IMG_20200729_202450.jpg" alt />
-            </div>
-          </div>
-          <div class="flex flex-wrap text-center">More coming soon...</div>
-          <div class="flex flex-wrap">
-            <h1
-              class="text-3xl font-semibold mt-4 rounded-lg px-2 shadow-lg w-64 bg-white text-purple-600"
-            >Curious mind</h1>
-            <br />
-            <h2
-              class="text-lg font-bold flex flex-wrap -mt-6 text-gray-900"
-            >Invite your curious mind to the world of whys</h2>
+      <div class="flex">
+        <Navbar v-if="x == true" class="sm:w-1/4 w-2/5" />
+
+        <div class="w-full h-screen pl-3 pt-2 bg-gray-100">
+          <div class="-ml-2">
+            <button
+              class="bg-teal-100 hover:bg-white text-blue-900 sh focus:outline-none hover:text-gray-800 rounded-full hover:shadow-lg"
+              @click="x=!x"
+            >
+              <ChevronLeftIcon v-if="x == true" />
+              <ChevronRightIcon v-else="x=!x" />
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="justify-end">
+      <div
+        class="flex flex-wrap p-2 hover:bg-gray-300 w-10 hover:shadow-xl focus:outline-none rounded-lg"
+      >
+        <button class>
+          <nuxt-link to="/">
+            <MailIcon />
+          </nuxt-link>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import {
+  MenuIcon,
+  MoreHorizontalIcon,
+  ChevronRightIcon,
+  ChevronLeftIcon,
+  MailIcon,
+} from "vue-feather-icons";
+
+export default {
+  components: {
+    MenuIcon,
+    MoreHorizontalIcon,
+    ChevronRightIcon,
+    ChevronLeftIcon,
+    MailIcon,
+  },
+  data() {
+    return {
+      x: true,
+      images: [
+        {
+          img: "/img/IMG_20200729_202423.jpg",
+          description: "1st image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202619.jpg",
+          description: "2nd image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202341.jpg",
+          description: "3rd image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202359.jpg",
+          description: "4th image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202347.jpg",
+          description: "5th image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202536.jpg",
+          description: "6th image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202608.jpg",
+          description: "7th image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202528.jpg",
+          description: "8th image details",
+          show: false,
+        },
+        {
+          img: "/img/IMG_20200729_202450.jpg",
+          description: "9th image details",
+          show: false,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>

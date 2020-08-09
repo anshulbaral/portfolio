@@ -2,13 +2,7 @@
   <div>
     <div class="h-full">
       <Header />
-      <div>
-        <div
-          class="flex justify-center flex-wrap font-medium italic text-white bg-purple-400 rounded-sm"
-        >
-          <div class="bg-indigo-700 p-2 rounded-full">A place where our talents meet.</div>
-        </div>
-      </div>
+
       <div class="flex">
         <Navbar v-if="x == true" class="sm:w-1/4 w-2/5" />
 
@@ -38,7 +32,7 @@
               <img class="rounded-lg" :src="i.img" alt />
               <button
                 @click="i.show = !i.show"
-                class="rounded-lg px-2 py-1 focus:outline-none hover:bg-white hover:shadow-lg"
+                class="rounded-lg px-2 py-1 focus:outline-none hover:bg-gray-100 hover:shadow-lg"
               >
                 <MoreHorizontalIcon />
               </button>
