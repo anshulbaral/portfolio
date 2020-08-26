@@ -8,9 +8,7 @@
     <div>
       <div
         class="flex justify-center flex-wrap -mt-3 z-20 shadow-2xl sm:font-medium italic text-white bg-purple-400 rounded-md"
-      >
-        <div class="bg-indigo-700 p-2 rounded-full">A place where our talents meet.</div>
-      </div>
+      ></div>
     </div>
   </div>
 </template>
