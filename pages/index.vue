@@ -3,6 +3,7 @@
   <head>
     <title>ReachAnshul</title>
   </head>
+
   <div class="h-full">
     <Header />
     <div class="bg-indigo-400 p-2 rounded text-center">
@@ -46,15 +47,6 @@
           </div>
         </div>
         <div class="flex flex-wrap text-center">More coming soon...</div>
-        <div>
-          <div
-            class="flex flex-wrap text-3xl font-semibold mt-4 rounded-lg px-2 shadow-lg w-64 bg-white text-purple-600"
-          >Curious mind</div>
-
-          <div
-            class="text-md font-normal flex flex-wrap text-gray-800"
-          >Invite your curious mind to the world of whys</div>
-        </div>
       </div>
     </div>
   </div>
