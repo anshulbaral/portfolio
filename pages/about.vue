@@ -18,8 +18,16 @@
           </div>
         </div>
       </div>
+      <div class="flex bg-white flex-wrap rounded-lg shadow-2xl">
+        This is the website of ReachAnshul, a company owned by Anshul Baral. 
+        <br>This is the personal website of Anshul Baral.
+        <br>Launched on May,2020.
+
+      </div>
+      <div class="flex bg-white flex-wrap rounded-lg shadow-2xl">
+       <div class=" uppercase">Dev's Note:</div>
     </div>
-    <div class="justify-end">
+    <div class=" flex justify-end">
       <div
         class="flex flex-wrap p-2 hover:bg-gray-300 w-10 hover:shadow-xl focus:outline-none rounded-lg"
       >
