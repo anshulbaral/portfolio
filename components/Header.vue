@@ -9,12 +9,16 @@
         src="img/heading.png"
       />
       <img src="img/thinkingemoji.png" class="h-6 rounded-full" />
+      <div class = "text-white font-semibold bg-purple-300 flex flex-wrap rounded-lg p-1">
+        ALPHA
+      </div>
     </div>
     <div>
       <div
-        class="flex justify-center flex-wrap -mt-3 z-20 shadow-2xl sm:font-medium italic text-white bg-purple-400 rounded-md"
+        class="flex justify-center flex-wrap -mt-3 z-20 shadow-2xl sm:font-medium font-bold text-white bg-purple-400 rounded-lg "
       >
-        BETA
+        NOTE : This website is still in development and many things are to be added and changed.
+        <br>"Only the body is done."
       </div>
     </div>
   </div>
