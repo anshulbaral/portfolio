@@ -6,9 +6,7 @@
 
   <div class="h-full">
     <Header />
-    <div class="bg-indigo-400 p-2 rounded text-center">
-      <div class="bg-gray-100 rounded-full p-1">A place where our talents meet.</div>
-    </div>
+    
 
     <div class="flex">
       <Navbar v-if="x == true" class="sm:w-1/4 w-2/5" />

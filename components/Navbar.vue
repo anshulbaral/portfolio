@@ -26,9 +26,7 @@
               class="px-2 py-1 rounded-md hover:text-gray-800 hover:shadow-lg"
             >Contact me</nuxt-link>
           </div>
-          <div class="flex items-center mb-2">
-            <div class="flex items-start">How I started my work.</div>
-          </div>
+          
         </div>
       </div>
     </div>
