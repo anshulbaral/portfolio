@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex justify-between items-center p-2 sm:p-4 rounded-sm bg-transparent"
+      class="flex justify-between items-center p-2 sm:p-4 rounded-sm bg-gray-100"
     ><div>
       <img
         class="rounded-lg shadow-lg h-16 sm:h-16 md:h-20 lg:h-24"

@@ -6,7 +6,7 @@
       <div class="flex">
         <Navbar v-if="x == true" class="sm:w-1/4 w-2/5" />
 
-        <div class="w-full h-screen pl-3 pt-2 bg-gray-100">
+        <div class="w-full h-screen pl-3 pt-2 bg-gray-200">
           <div class="-ml-2">
             <button
               class="bg-teal-100 hover:bg-white text-blue-900 sh focus:outline-none hover:text-gray-800 rounded-full hover:shadow-lg"
@@ -16,30 +16,20 @@
               <ChevronRightIcon v-else="x=!x" />
             </button>
           </div>
-          <div class="flex bg-white p-2 mb-2 flex-wrap font-semibold text-gray-900 w-2/3 rounded-lg shadow-2xl">
+          <div class="flex bg-gray-100 p-2 mb-2 flex-wrap font-semibold text-gray-900 w-2/3 rounded-lg shadow-2xl">
         This is the website of ReachAnshul, by Anshul Baral. 
         <br>This is the personal website of Anshul Baral.
         <br>Launched on May,2020.
 
       </div>
-      <div class="flex bg-white p-2 flex-wrap font-semibold text-gray-900 w-48 rounded-lg shadow-2xl">
+      <div class="flex bg-gray-100 p-2 flex-wrap font-semibold text-gray-900 w-48 rounded-lg mb-2 shadow-2xl">
        <div class=" uppercase">Dev's Note:</div>
     </div>
-     <div class="flex bg-white p-2 flex-wrap font-semibold text-gray-900 rounded-lg shadow-2xl">
+     <div class="flex bg-gray-100 p-2 flex-wrap font-semibold text-gray-900 w-2/3 rounded-lg shadow-2xl">
        This is actually the first website developed by the ReachAnshul as a start for developing awesome websites!!
         </div>
       </div>
-    <div class=" flex justify-end">
-      <div
-        class="flex flex-wrap p-2 hover:bg-gray-300 w-10 hover:shadow-xl focus:outline-none rounded-lg"
-      >
-        <button class>
-          <nuxt-link to="/">
-            <MailIcon />
-          </nuxt-link>
-        </button>
-      </div>
-    </div>
+    
   </div>
   </div>
   </div>
