@@ -17,7 +17,7 @@
         class="flex justify-center flex-wrap -mt-3 z-20 shadow-2xl sm:font-medium font-bold text-white bg-purple-400 rounded-lg "
       >
         NOTE : This website is still in development and many things are to be added and changed.
-        <br>"Only the body is done."
+        <br>"The following components are temporary. And may not be there after website development is complete."
       </div>
     </div>
   </div>

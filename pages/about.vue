@@ -17,7 +17,7 @@
             </button>
           </div>
           <div class="flex bg-white p-2 mb-2 flex-wrap font-semibold text-gray-900 w-2/3 rounded-lg shadow-2xl">
-        This is the website of ReachAnshul, a company owned by Anshul Baral. 
+        This is the website of ReachAnshul, by Anshul Baral. 
         <br>This is the personal website of Anshul Baral.
         <br>Launched on May,2020.
 
@@ -25,6 +25,8 @@
       <div class="flex bg-white p-2 flex-wrap font-semibold text-gray-900 w-48 rounded-lg shadow-2xl">
        <div class=" uppercase">Dev's Note:</div>
     </div>
+     <div class="flex bg-white p-2 flex-wrap font-semibold text-gray-900 rounded-lg shadow-2xl">
+       This is actually the first website developed by the ReachAnshul as a start for developing awesome websites!!
         </div>
       </div>
     <div class=" flex justify-end">
@@ -38,6 +40,7 @@
         </button>
       </div>
     </div>
+  </div>
   </div>
   </div>
 </template>
